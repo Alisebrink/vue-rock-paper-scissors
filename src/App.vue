@@ -125,7 +125,7 @@ export default {
 body {
   background-image: linear-gradient(45deg, #667eea 0%, #764ba2 100%);
   font-family: "Montserrat", sans-serif;
-  font-size: 1.2em;
+  font-size: 1.1em;
   padding: 0px;
   margin: 0px;
   color: black;
@@ -152,7 +152,6 @@ h1 {
   padding: 10px;
   text-align: center;
   font-size: 12px;
-  border-radius: 5px 5px 0px 0px;
 }
 
 .gameContainer {
@@ -237,13 +236,14 @@ h1 {
 }
 
 .buttons button {
-  font-size: 1rem;
+  font-size: .8rem;
   border: none;
   border-radius: 3px;
   background: #242424;
   color: white;
   font-weight: 700;
   flex: auto;
+  padding:10px 0px;
 }
 
 .buttons button:nth-child(2) {
@@ -266,6 +266,10 @@ h1 {
     margin: 0 auto;
     border-radius: 5px;
     box-shadow: 0px 3px 15px rgb(0, 0, 0, 0.15);
+  }
+
+  .header {
+  border-radius: 5px 5px 0px 0px;
   }
 
   .gameContainer {
