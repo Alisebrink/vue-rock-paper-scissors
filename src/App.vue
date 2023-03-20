@@ -122,6 +122,10 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;700&display=swap");
 
+* {
+  touch-action: manipulation;
+}
+
 body {
   background-image: linear-gradient(45deg, #667eea 0%, #764ba2 100%);
   font-family: "Montserrat", sans-serif;
