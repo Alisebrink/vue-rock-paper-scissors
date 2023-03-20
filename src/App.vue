@@ -1,6 +1,6 @@
 <template>
   <section class="mainContainer">
-    <header class="header"><h1>rock, paper, scissor</h1></header>
+    <header class="header"><h1>Lets play rock, paper, scissor!</h1></header>
 
     <div class="gameContainer">
       <div>
@@ -20,7 +20,7 @@
             You chose: <span>{{ player_choice }}</span>
           </p>
           <p class="opponentChose">
-            Opponent chose: <span>{{ opponent_choice }}</span>
+            Your opponent chose: <span>{{ opponent_choice }}</span>
           </p>
         </div>
 
@@ -136,7 +136,6 @@ body {
 h1 {
   padding: 0;
   margin: 0;
-  font-family: "Merriweather", serif;
 }
 
 .mainContainer {
@@ -153,6 +152,7 @@ h1 {
   padding: 10px;
   text-align: center;
   font-size: 12px;
+  border-radius: 5px 5px 0px 0px;
 }
 
 .gameContainer {
@@ -194,7 +194,7 @@ h1 {
 
 .playerChose,
 .opponentChose {
-  color: #b582e1;
+  color: #667eea;
   font-weight: 700;
   margin: 5px;
 }
@@ -211,8 +211,8 @@ h1 {
 }
 
 .scoreboard h2 {
-  color: #b582e1;
-  border-bottom: 2px solid #b582e1;
+  color: #667eea;
+  border-bottom: 2px solid #667eea;
   font-size: 1.2rem;
 }
 
@@ -221,7 +221,7 @@ h1 {
 }
 
 .score p span {
-  color: #b582e1;
+  color: #667eea;
   font-weight: 700;
 }
 
@@ -252,7 +252,7 @@ h1 {
 
 .buttons button:hover {
   cursor: pointer;
-  background: #9166b7;
+  background: #764ba2;
   transition: 0.1s;
 }
 
