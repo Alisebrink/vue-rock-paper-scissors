@@ -1,9 +1,9 @@
 <template>
-        <button v-on:click="randomChoice()">Rock, paper, scissor!</button>
+        <button v-on:click="randomChoice()">Let's play!</button>
 </template>
 
 <script>
-const choices = ['Rock', 'Paper', 'Scissor'];
+const choices = ['Rock', 'Paper', 'Scissor', 'Lizard', 'Spock'];
 
 export default {
     data() {

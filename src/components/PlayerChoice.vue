@@ -24,6 +24,22 @@
       alt="Välj sax"
       v-on:click="scissorChosen()"
     />
+    <img
+      type="button"
+      :src="hoverOnLizard"
+      @mouseover="setHoverLizard = true"
+      @mouseleave="setHoverLizard = false"
+      alt="Välj sax"
+      v-on:click="lizardChosen()"
+    />
+    <img
+      type="button"
+      :src="hoverOnSpock"
+      @mouseover="setHoverSpock = true"
+      @mouseleave="setHoverSpock = false"
+      alt="Välj sax"
+      v-on:click="spockChosen()"
+    />
   </div>
 </template>
 
@@ -41,6 +57,12 @@ export default {
       scissor: require("../assets/sax.png"),
       scissorHover: require("../assets/sax-hover.png"),
       setHoverScissor:false,
+      lizard: require("../assets/lizard.png"),
+      lizardHover: require("../assets/lizard-hover.png"),
+      setHoverLizard:false,
+      spock: require("../assets/spock.png"),
+      spockHover: require("../assets/spock-hover.png"),
+      setHoverSpock:false,
     }
   },
 
@@ -66,6 +88,20 @@ export default {
         return this.scissor
       }
     },
+    hoverOnLizard () {
+      if (this.setHoverLizard == true) {
+        return this.lizardHover
+      } else {
+        return this.lizard
+      }
+    },
+    hoverOnSpock () {
+      if (this.setHoverSpock == true) {
+        return this.spockHover
+      } else {
+        return this.spock
+      }
+    },
   },
 
   methods: {
@@ -78,6 +114,12 @@ export default {
     scissorChosen() {
       this.$emit("getChoice", "Scissor");
     },
+    lizardChosen() {
+      this.$emit("getChoice", "Lizard");
+    },
+    spockChosen() {
+      this.$emit("getChoice", "Spock");
+    },
   },
 };
 </script>
@@ -87,7 +129,9 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 20px;
+  margin:0 auto;
 }
 
 .choices img {
@@ -106,6 +150,7 @@ export default {
 
 .choices img {
   width:auto;
+  max-width:150px;
 }
 
 }

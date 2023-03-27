@@ -1,12 +1,16 @@
 <template>
   <section class="mainContainer">
-    <header class="header"><h1>Lets play rock, paper, scissor!</h1></header>
+    <header class="header">
+      <h1>Let us play the fantastic rock, paper, scissor, lizard, Spock!</h1>
+    </header>
 
     <div class="gameContainer">
       <div>
         <p>
-          Welcome to play the game rock, paper, scissor! Make your selection and
-          start the game!
+          <span>So here are the rules:</span> Scissors cuts Paper, paper covers Rock, rock
+          crushes Lizard, lizard poisons Spock, spock smashes Scissors, scissors
+          decapitates lizard, lizard eats Paper, paper disproves Spock, Spock
+          vaporizes Rock (and as it always has) Rock crushes Scissors.
         </p>
       </div>
 
@@ -83,6 +87,10 @@ export default {
         return "sten.png";
       } else if (this.opponent_choice == "Paper") {
         return "påse.png";
+      } else if (this.opponent_choice == "Lizard") {
+        return "lizard.png";
+      } else if (this.opponent_choice == "Spock") {
+        return "spock.png";
       } else {
         return "sax.png";
       }
@@ -94,8 +102,15 @@ export default {
         this.winner = "It's a tie!";
       } else if (
         (opponent_choice === "Scissor" && player_choice === "Paper") ||
-        (opponent_choice === "Rock" && player_choice === "Scissor") ||
-        (opponent_choice === "Paper" && player_choice === "Rock")
+        (opponent_choice === "Paper" && player_choice === "Rock") ||
+        (opponent_choice === "Rock" && player_choice === "Lizard") ||
+        (opponent_choice === "Lizard" && player_choice === "Spock") ||
+        (opponent_choice === "Spock" && player_choice === "Scissor") ||
+        (opponent_choice === "Scissor" && player_choice === "Lizard") ||
+        (opponent_choice === "Lizard" && player_choice === "Paper") ||
+        (opponent_choice === "Paper" && player_choice === "Spock") ||
+        (opponent_choice === "Spock" && player_choice === "Rock") ||
+        (opponent_choice === "Rock" && player_choice === "Scissor")
       ) {
         this.opponent_score++;
         this.winner = "Your opponent won! :(";
@@ -164,7 +179,7 @@ h1 {
   text-align: center;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 20vh 35vh 20vh 10vh;
+  grid-template-rows: 220px 1fr 20vh 10vh;
 }
 
 .gameContainer div + p {
@@ -223,7 +238,7 @@ h1 {
   color: black;
 }
 
-.score p span {
+.score p span, .gameContainer p span {
   color: #667eea;
   font-weight: 700;
 }
@@ -240,14 +255,14 @@ h1 {
 }
 
 .buttons button {
-  font-size: .8rem;
+  font-size: 0.8rem;
   border: none;
   border-radius: 3px;
   background: #242424;
   color: white;
   font-weight: 700;
   flex: auto;
-  padding:10px 0px;
+  padding: 10px 0px;
 }
 
 .buttons button:nth-child(2) {
@@ -273,7 +288,7 @@ h1 {
   }
 
   .header {
-  border-radius: 5px 5px 0px 0px;
+    border-radius: 5px 5px 0px 0px;
   }
 
   .gameContainer {
