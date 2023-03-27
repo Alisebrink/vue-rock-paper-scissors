@@ -6,7 +6,7 @@
 
     <div class="gameContainer">
       <div>
-        <p>
+        <p class="rules">
           <span>So here are the rules:</span> Scissors cuts Paper, paper covers Rock, rock
           crushes Lizard, lizard poisons Spock, spock smashes Scissors, scissors
           decapitates lizard, lizard eats Paper, paper disproves Spock, Spock
@@ -238,7 +238,7 @@ h1 {
   color: black;
 }
 
-.score p span, .gameContainer p span {
+.score p span, .rules span {
   color: #667eea;
   font-weight: 700;
 }
