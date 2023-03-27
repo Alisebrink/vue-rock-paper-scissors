@@ -7,10 +7,10 @@
     <div class="gameContainer">
       <div>
         <p class="rules">
-          <span>So here are the rules:</span> Scissors cuts Paper, paper covers Rock, rock
-          crushes Lizard, lizard poisons Spock, spock smashes Scissors, scissors
-          decapitates lizard, lizard eats Paper, paper disproves Spock, Spock
-          vaporizes Rock (and as it always has) Rock crushes Scissors.
+          <span>So here are the rules:</span> Scissors cuts paper, paper covers rock, rock
+          crushes lizard, lizard poisons Spock, spock smashes scissors, scissors
+          decapitates lizard, lizard eats paper, paper disproves Spock, Spock
+          vaporizes rock (and as it always has) rock crushes scissors.
         </p>
       </div>
 
