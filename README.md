@@ -1,4 +1,5 @@
-# vue-rock-paper-scissors
+# vue-rock-paper-scissors-lizard-spock
+This a basic game created with simple logic, but it does the trick and is still very fun!
 
 ## Tech stack
 HTML, CSS, project made with Vue 3.

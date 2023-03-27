@@ -142,7 +142,7 @@ export default {
 }
 
 body {
-  background-image: linear-gradient(45deg, #667eea 0%, #764ba2 100%);
+  background: #242424;
   font-family: "Montserrat", sans-serif;
   font-size: 1.1em;
   padding: 0px;
@@ -165,7 +165,7 @@ h1 {
 }
 
 .header {
-  background: #242424;
+  background: #D60A0A;
   color: white;
   font-weight: 700;
   padding: 10px;
@@ -212,7 +212,7 @@ h1 {
 
 .playerChose,
 .opponentChose {
-  color: #667eea;
+  color: #D60A0A;
   font-weight: 700;
   margin: 5px;
 }
@@ -229,8 +229,8 @@ h1 {
 }
 
 .scoreboard h2 {
-  color: #667eea;
-  border-bottom: 2px solid #667eea;
+  color: #D60A0A;
+  border-bottom: 2px solid #D60A0A;
   font-size: 1.2rem;
 }
 
@@ -239,7 +239,7 @@ h1 {
 }
 
 .score p span, .rules span {
-  color: #667eea;
+  color: #D60A0A;
   font-weight: 700;
 }
 
@@ -271,7 +271,7 @@ h1 {
 
 .buttons button:hover {
   cursor: pointer;
-  background: #764ba2;
+  background: #D60A0A;
   transition: 0.1s;
 }
 
